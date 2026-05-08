@@ -74,6 +74,10 @@
    color: #2563eb;
  }
 
+ .mob-view{
+  display: none;
+ }
+
  .nav-btn {
    padding: 12px 24px;
    background: #2563eb;
@@ -359,6 +363,9 @@
 
    .nav-btn {
      display: none;
+   }
+   .mob-view{
+    display: block;
    }
 
    .hero h1 {
