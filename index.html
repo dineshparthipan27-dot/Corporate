@@ -26,7 +26,7 @@
 
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="index404.html">About</a></li>
       <li><a href="index404.html">Services</a></li>
       <li><a href="index404.html">Portfolio</a></li>
@@ -577,26 +577,30 @@
 
     <div class="contact-form">
 
-      <form>
+      <form id="contactForm">
 
         <div class="input-box">
-          <input type="text" required>
+          <input type="text" id="fullName" required>
           <label>Full Name</label>
+          <small class="error"></small>
         </div>
 
         <div class="input-box">
-          <input type="email" required>
+          <input type="email" id="email" required>
           <label>Email Address</label>
+          <small class="error"></small>
         </div>
 
         <div class="input-box">
-          <input type="text" required>
+          <input type="text" id="subject" required>
           <label>Subject</label>
+          <small class="error"></small>
         </div>
 
         <div class="input-box textarea-box">
-          <textarea required></textarea>
+          <textarea id="message" required></textarea>
           <label>Your Message</label>
+          <small class="error"></small>
         </div>
 
         <button type="submit" class="contact-btn">
@@ -604,6 +608,7 @@
         </button>
 
       </form>
+
 
     </div>
 
@@ -689,16 +694,17 @@
           Subscribe to receive updates, news, and business insights.
         </p>
 
-        <form class="newsletter-form">
+        <form class="newsletter-form" id="newsletterForm">
 
-          <input type="email" placeholder="Enter your email" required>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
 
-          <a href="index404.html">
+          <button type="submit">
             Subscribe
-          </a>
+          </button>
+
+          <small class="error newsletter-error"></small>
 
         </form>
-
       </div>
 
     </div>

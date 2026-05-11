@@ -69,13 +69,29 @@
  .nav-links a:hover::after {
    width: 100%;
  }
+ 
+ .nav-links .active{
+  position: relative;
+     color: #2563eb;
+
+ }
+ .nav-links .active::after{
+     content: '';
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   width: 100%;
+   height: 2px;
+   background: #2563eb;
+   transition: 0.3s;
+ }
 
  .nav-links a:hover {
    color: #2563eb;
  }
 
- .mob-view{
-  display: none;
+ .mob-view {
+   display: none;
  }
 
  .nav-btn {
@@ -364,8 +380,9 @@
    .nav-btn {
      display: none;
    }
-   .mob-view{
-    display: block;
+
+   .mob-view {
+     display: block;
    }
 
    .hero h1 {
@@ -1719,7 +1736,7 @@
 
  }
 
- .newsletter-form a {
+ .newsletter-form button {
    width: 100%;
    padding: 16px;
    border: none;
@@ -1799,4 +1816,50 @@
  .footer-bottom p {
    color: #000;
 
+ }
+
+ /* Error Style */
+ .error {
+   color: red;
+   font-size: 13px;
+   display: block;
+   margin-top: 5px;
+ }
+
+ .input-box.error input,
+ .input-box.error textarea {
+   border: 1px solid red;
+ }
+
+ .input-box.success input,
+ .input-box.success textarea {
+   border: 1px solid #00b894;
+ }
+
+ .newsletter-error {
+   margin-top: 10px;
+   display: block;
+ }
+
+ /* Error Style */
+ .error {
+   color: red;
+   font-size: 13px;
+   display: block;
+   margin-top: 5px;
+ }
+
+ .input-box.error input,
+ .input-box.error textarea {
+   border: 1px solid red;
+ }
+
+ .input-box.success input,
+ .input-box.success textarea {
+   border: 1px solid #00b894;
+ }
+
+ .newsletter-error {
+   margin-top: 10px;
+   display: block;
  }
