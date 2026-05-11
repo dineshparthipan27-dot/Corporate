@@ -69,14 +69,15 @@
  .nav-links a:hover::after {
    width: 100%;
  }
- 
- .nav-links .active{
-  position: relative;
-     color: #2563eb;
+
+ .nav-links .active {
+   position: relative;
+   color: #2563eb;
 
  }
- .nav-links .active::after{
-     content: '';
+
+ .nav-links .active::after {
+   content: '';
    position: absolute;
    left: 0;
    bottom: -6px;
@@ -1764,11 +1765,26 @@
    text-align: center;
    position: relative;
    z-index: 2;
+   display: flex;
+   justify-content: space-between;
+   color: #cfd8e7;
  }
 
  .footer-bottom p {
-   color: #94a3b8;
+   color: #cfd8e7;
    font-size: 14px;
+ }
+
+ .footer-bottom a {
+   text-decoration: none;
+   color: #cfd8e7;
+   transition: 0.4s ease;
+   display: inline-block;
+ }
+
+ .footer-bottom .footer-links {
+   display: flex;
+   gap: 20px;
  }
 
  @keyframes fadeUp {
@@ -1810,11 +1826,6 @@
      justify-content: center;
 
    }
-
- }
-
- .footer-bottom p {
-   color: #000;
 
  }
 
